@@ -1,20 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>QUIZ</title>
-<style>
-
-
-</style>
+<title>quiz</title>
 </head>
 <body>
-<form action="form.php" method="POST">
-<p>What is your name</p>
-<br><input type="text" name="name" placeholder="name">
-<br><p>what is your grade</p>
-<br><input type="number" name="grade" placeholder="grade" min="1" max="10">
-<br><p>your email address</p>
-<br><input type="email" name="email" value="" placeholder="email">
+<form action="form_handler.php" method="POST">
+<input type="text" name="name" minlength="3" maxlength="12" placeholder="your full name" required>
+<br><input type="tel" name="phone" placeholder="your phone no." required>
+<br><h1 align="center">QUIZ</h1>
+<br><h1 align="center">WORK FORCE AND ENERGY</h1>
+<br><p>Find the work done by a force of 5N in displacing a book through 20cm along the direction of the push.</p>
+<br><input type="radio" name="q1" value="a" required><p>1J</p>
+<br><input type="radio" name="q1" value="b" required><p>2J</p>
+<br><input type="radio" name="q1" value="c" required><p>5J</p>
+<br><input type="radio" name="q1" value="d" required><p>3J</p>
+<br><p>A ball of mass 1kg thrown upwards reaches a maximum height of5m. Calculate the work done by the force of gravity during this vertical displacement.</p>
+<br><input type="radio" name="q2" value="a" required><p>-30J</p>
+<br><input type="radio" name="q2" value="b" required><p>-48J</p>
+<br><input type="radio" name="q2" value="c" required><p>-49J</p>
+<br><input type="radio" name="q2" value="d" required><p>5J</p>
+<br><p>An object of mass 1kg is raised through a height′h′. Its potential energy is increased by 1J. Find the height.</p>
+<br><input type="radio" name="q3" value="a" required><p>0.102</p>
+<br><input type="radio" name="q3" value="b" required><p>0.1025</p>
+<br><input type="radio" name="q3" value="c" required><p>0.132</p>
+<br><input type="radio" name="q3" value="d" required><p>0.02</p>
+<br><p>Calculate the kinetic energy of a body of mass 10kg moving with a velocity2ms−<small>1</small>.</p>
+<br><input type="radio" name="q4" value="a" required><p>2J</p>
+<br><input type="radio" name="q4" value="b" required><p>20J</p>
+<br><input type="radio" name="q4" value="c" required><p>50J</p>
+<br><input type="radio" name="q4" value="d" required><p>21J</p>
+<br><p>WHere is work not being done?</p>
+
+<br><input type="radio" name="q5" value="a" required><p>lifting a basket</p>
+<br><input type="radio" name="q5" value="b" required><p>keeping a basket on your head</p>
+<br><input type="radio" name="q5" value="c" required><p>running</p>
+<br><input type="radio" name="q5" value="d" required><p>shopping in the super market</p>
+<br><p>A 20kg ball is thrown upwards with a speed of6ms−<small>1</small>. Find the maximum height it reaches(g=9.8ms−<small>2</small>).</p>
+<br><input type="radio" name="q6" value="a" required><p>1.84</p>
+<br><input type="radio" name="q6" value="b" required><p>2.45</p>
+<br><input type="radio" name="q6" value="c" required><p>1.98</p>
+<br><input type="radio" name="q6" value="d" required><p>45.12</p>
+
+<textarea name="msg" value="" placeholder="do you have any doubt?"></textarea>
+<br><input type="submit" name="ok">
 </form>
 </body>
+
 </html>
